@@ -1,0 +1,59 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id=")t%cJ;MkiD:SZo)S4*3q" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">START</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="0$[=42V4A*K?uc!B*?_A">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="bl]ByH9ahz8[{%:XqPJ)">
+            <field name="TEXT">Project Start</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="nlvV``/Aa7!ko??=J;KE">
+            <field name="INPUTNAME">NAME</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_dropdown" id="r[-8[CRIOq$f$jwnS|t5">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">NORME</field>
+                <field name="USER0">option</field>
+                <field name="CPU0">FR_NORME</field>
+                <field name="USER1">option</field>
+                <field name="CPU1">BE_NORME</field>
+                <field name="USER2">option</field>
+                <field name="CPU2">DE_NORME</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="zwPsrg|FePPV9f:|a0zC"></shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="dDQ.jPVo1*w-l*E3?T6y" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="z0P457p~[y.q!9X3s9jn" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="CF-eYG0)N,YRPBqx{?kA"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":!4JpTi+]NmOsJrI)m2f"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="1KT8h=A28wdpQ!w5{hl!">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block></xml>
