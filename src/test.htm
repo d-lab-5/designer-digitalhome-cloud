@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+// Define your JSON object
+var jsonObject = {
+    "name" : "name",
+    "label" : {
+        "FR" : "french label",
+        "EN" : "english label",
+        "DE" : "german label"
+    },
+    "img_src" : "C:\\DevOps\\SmartHomeModel\\designer-digitalhome-cloud\\symbols\\appareillage-6.gif"
+};
+
+// Function to draw symbol
+function drawSymbol(name) {
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var img = new Image();
+
+    // Use the img_src from the JSON object
+    img.src = jsonObject.img_src;
+    img.onload = function() {
+        // Create basis: 
+        context.moveTo(0,canvas.height-50);
+        context.lineTo(canvas.width,canvas.height-50);
+        context.strokeStyle = 'blue';
+        context.lineWidth = 4; // Set the line thickness to 10 pixels
+        context.stroke();
+        context.lineWidth = 1; // Set the line thickness to 10 pixels
+
+
+        context.moveTo(0, canvas.height / 4);
+        context.drawImage(img, 0, 0, img.width, img.height);
+        context.beginPath();
+        context.moveTo(img.width-10, img.height / 2);
+        context.lineTo(canvas.width, canvas.height / 2);
+        context.strokeStyle = 'black';
+        context.stroke();
+
+
+
+        // Add text
+        context.font = "10px Arial";
+        context.fillText(jsonObject.label.EN, 10, 50);
+
+        // Add a symbol
+        context.font = "50px Arial";
+        context.fillText("♥", 10, 100);
+    }
+}
+
+// Call the function with the name from the JSON object
+drawSymbol(jsonObject.name);
+</script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
